@@ -1,0 +1,247 @@
+.homeContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 16px;
+    padding-top: 65px;
+    box-sizing: border-box;
+    overflow-x:  hidden;
+
+   
+ 
+}
+
+
+.childContainer
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logoContainer
+{
+    width: 55%;
+    max-width: 550px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgLogo{
+    height: 100%;
+    width: 100%;
+}
+
+.walletContainer{
+    min-height: 20%;
+    width: 75%;
+    max-width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titleWallet{
+    font-family: Impact;
+    color: #082F32;
+    font-size: 2.25em;
+    text-align: center;
+    line-height: 150%;
+    margin-top: 45px;
+}
+
+.textWallet{
+    font-family: WorkSans;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 150%;
+    color: #3E5F61;
+    margin-bottom: 45px;
+}
+
+.modelePourcent{
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact;
+    font-size: 1.2em;
+    position: relative;
+    overflow: hidden;
+    background-color: #A8A8A8;
+    color: #082F32;
+    margin-bottom: 20px;
+    
+}
+
+.modeleButton{
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: WorkSans;
+    font-size: 0.9em;
+    color:white;
+    background-color: #10474F;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.modeleButton:hover
+{
+    background-color: #185C64;
+}
+
+.imgBottom{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.ligne{
+    height: 2px;
+    width: 35%;
+    background-color: #A8A8A8;
+    margin-bottom: 10px;
+}
+
+.containerDevise{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 38px;
+    margin-top: 15px;
+   
+}
+
+.buttonDevise{
+    width: 48%;
+    height: 100%;
+    background-color: #237A89;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: WorkSans;
+    cursor: pointer;
+}
+
+.containerMount{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+   
+}
+
+.inputMount{
+    width: 100%;
+    height: 65%;
+    background-color: #10474F;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: WorkSans;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 13px;
+    
+}
+
+.containerInput{
+    width: 48%;
+    height: 100%;
+    font-family: WorkSans;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.textTopInput{
+    font-size: 0.88em;
+    height: 25%;
+    color:#185C64;
+    
+}
+
+.leftLogo{
+  
+   position: fixed;
+   left: 0;
+   top: 65px;
+   width: 35%;
+   min-width: 200px;
+   z-index: -2;
+   
+}
+
+.rightLogo{
+    
+    position: fixed;
+    right: 0;
+    top: 65px;
+    width: 35%;
+    z-index: 0;
+    min-width: 200px;
+    z-index: -2;
+ }
+
+ .colorModelePourcent{
+    position: absolute;
+    width: 85%;
+    background-color: #237A89;
+    height: 100%;
+    left: 0;
+    
+ }
+
+ .logoCrypto{
+    margin-right: 8px;
+ }
+
+ @media only screen and (max-width: 900px) {
+    .titleWallet{
+        font-family: Impact;
+        color: #082F32;
+        font-size: 1.8em;
+        text-align: center;
+        line-height: 150%;
+        margin-top: 45px;
+    }
+
+    .modelePourcent{
+        width: 100%;
+        height: 45px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Impact;
+        font-size: 1em;
+        position: relative;
+        overflow: hidden;
+        background-color: #A8A8A8;
+        color: #082F32;
+        margin-bottom: 20px;
+        text-align: center;
+        
+    }
+    
+ }

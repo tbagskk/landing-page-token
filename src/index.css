@@ -1,13 +1,38 @@
-body {
+html, body {
+  height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'Impact';
+  src: url(./fonts/impact.ttf) format('trueType');
+}
+
+@font-face {
+  font-family: 'WorkSans';
+  src: url(./fonts/WorkSans-Medium.ttf) format('trueType');
+}
+
+@font-face {
+  font-family: 'WorkSansBold';
+  src: url(./fonts/WorkSans-Bold.ttf) format('trueType');
+  font-weight: bold;
+}
+
+b, strong {
+  font-family: 'WorkSansBold', sans-serif; 
+}
+
+p{
+  margin: 0;
+}
+
+nav ul {
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
 }

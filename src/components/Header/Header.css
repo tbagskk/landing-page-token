@@ -1,0 +1,125 @@
+.headerContainer{
+   width: 100%;
+   background-color: #15535C;
+   height: 65px;
+   position: fixed;
+   z-index: 2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.childHeader{
+   max-width: 2000px;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logoHeader{
+   height: 80%;
+}
+
+.navHeader{
+   font-family: Impact;
+   color: white;
+   font-size: 16px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 80%;
+}
+
+.ulHeader{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+}
+
+.leftHeader{
+   height: 100%;
+   min-width: 50%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   box-sizing: border-box;
+   padding-left: 15px;
+}
+
+.rightHeader{
+   min-width: 28%;
+   height: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-family: Impact;
+   color: white;
+   font-size: 16px;
+   box-sizing: border-box;
+   padding-right: 15px;
+}
+
+.buttonAudit{
+   height: 75%;
+   width: 80px;
+   border: 1px solid #EB711A;
+   border-radius: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.buttonBuy{
+   height: 75%;
+   width: 160px;
+   border-radius: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #30C6DA;
+}
+
+.buttonStaking{
+   height: 75%;
+   width: 100px;
+   border-radius: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #EB711A;
+}
+
+.menuPhone{
+   display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+   .headerContainer{
+      width: 100%;
+      background-color: #15535C;
+      height: 65px;
+      position: fixed;
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   .navHeader{
+      display: none;
+   }
+   .rightHeader{
+      display: none;
+   }
+   .menuPhone{
+      display: flex;
+      height: 80%;
+      width: 10%;
+      color: white;
+      margin-right: 10px;
+   }
+   
+   
+}
