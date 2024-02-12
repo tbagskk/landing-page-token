@@ -10,3 +10,4 @@ An essential feature of this page is the currency conversion capability. Users w
 
 This project was developed using React JS for client-side logic and Vanilla CSS for styling. This combination of technologies provides a smooth and responsive user experience while offering maximum flexibility for visual design.
 
+![screen1](screen1.png)
