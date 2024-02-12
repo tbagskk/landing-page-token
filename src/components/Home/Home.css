@@ -17,7 +17,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 2000px;
     position: relative;
 }
 
@@ -105,7 +104,7 @@
 .imgBottom{
     width: 100%;
     margin-top: 50px;
-    max-width: 2000px;
+
     z-index: 1;
 }
 
@@ -221,7 +220,7 @@
     justify-content: space-around;
     align-items: center;
     box-sizing: border-box;
-    max-width: 2000px;
+
  }
 
  .childStat{
