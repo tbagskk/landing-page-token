@@ -3,7 +3,7 @@
    background-color: #15535C;
    height: 65px;
    position: fixed;
-   z-index: 2;
+   z-index: 10;
    display: flex;
    justify-content: center;
    align-items: center;

@@ -7,11 +7,8 @@
     padding-top: 65px;
     box-sizing: border-box;
     overflow-x:  hidden;
-
-   
- 
+    overflow: hidden;
 }
-
 
 .childContainer
 {
@@ -20,6 +17,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    max-width: 2000px;
+    position: relative;
 }
 
 .logoContainer
@@ -30,6 +29,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index:1;
 }
 
 .imgLogo{
@@ -45,6 +45,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: 1;
 }
 
 .titleWallet{
@@ -79,7 +80,6 @@
     background-color: #A8A8A8;
     color: #082F32;
     margin-bottom: 20px;
-    
 }
 
 .modeleButton{
@@ -105,6 +105,8 @@
 .imgBottom{
     width: 100%;
     margin-top: 50px;
+    max-width: 2000px;
+    z-index: 1;
 }
 
 .ligne{
@@ -121,7 +123,6 @@
     align-items: center;
     height: 38px;
     margin-top: 15px;
-   
 }
 
 .buttonDevise{
@@ -145,7 +146,6 @@
     height: 75px;
     margin-bottom: 30px;
     margin-top: 10px;
-   
 }
 
 .inputMount{
@@ -160,7 +160,6 @@
     box-sizing: border-box;
     box-sizing: border-box;
     padding-left: 13px;
-    
 }
 
 .containerInput{
@@ -178,29 +177,28 @@
     font-size: 0.88em;
     height: 25%;
     color:#185C64;
-    
 }
 
 .leftLogo{
   
-   position: fixed;
+   position: absolute;
    left: 0;
-   top: 65px;
+   top: 0;
    width: 35%;
    min-width: 200px;
-   z-index: -2;
-   
+   max-width: 1000px;
+   z-index: 0;
 }
 
 .rightLogo{
     
-    position: fixed;
+    position: absolute;
     right: 0;
-    top: 65px;
+    top: 0;
     width: 35%;
     z-index: 0;
     min-width: 200px;
-    z-index: -2;
+    max-width: 1000px;
  }
 
  .colorModelePourcent{
@@ -209,11 +207,67 @@
     background-color: #237A89;
     height: 100%;
     left: 0;
-    
  }
 
  .logoCrypto{
     margin-right: 8px;
+ }
+
+ .containerStat{
+    height: 120px;
+    width: 100%;
+    background-color: #175C64;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 2000px;
+ }
+
+ .childStat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    color: white;
+ }
+
+ .textStat {
+    font-family: WorkSans;
+    font-size: 1em;
+ }
+
+ .numberStat {
+    font-family: Impact;
+    font-size: 3em;
+ }
+
+ #api{
+    transform: scale(1.2);
+    background-color: #EB711A;
+    min-width: 200px;
+    z-index: 1;
+ }
+ #apiText{
+    font-size: 1.2em;
+ }
+ #apiNumber{
+    font-size: 3.8em;
+ }
+
+ .leftStat{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+ }
+
+ .rightStat{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
  }
 
  @media only screen and (max-width: 900px) {
@@ -234,14 +288,87 @@
         justify-content: center;
         align-items: center;
         font-family: Impact;
-        font-size: 1em;
+        font-size: 0.9em;
         position: relative;
         overflow: hidden;
         background-color: #A8A8A8;
         color: #082F32;
         margin-bottom: 20px;
         text-align: center;
-        
     }
-    
+    .textTopInput{
+        font-size: 0.7em;
+        height: 25%;
+        color:#185C64;
+    }
+    .leftLogo{
+        position: fixed;
+        left: 0;
+        top: 65px;
+        width: 35%;
+        min-width: 170px;
+        z-index: -2;
+     }
+     .rightLogo{
+         position: fixed;
+         right: 0;
+         top: 65px;
+         width: 35%;
+         z-index: 0;
+         min-width: 170px;
+         z-index: -2;
+    }
+    .containerStat{
+        height: auto;
+        width: 100%;
+        background-color: #175C64;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+     }
+     .textStat {
+        font-family: WorkSans;
+        font-size: 2.7vw;
+     }
+     .numberStat {
+        font-family: Impact;
+        font-size: 4.2vw;
+     }
+     .childStat{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        color: white;
+        min-height: 80px;
+     }
+     .leftStat{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+     }
+     .rightStat{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+     }
+     #api{
+        background-color: #EB711A;
+        min-width: 200px;
+        width: 100%;
+        min-height: 100px;
+     }
+     #apiText{
+        font-size: 1em;
+     }
+     #apiNumber{
+        font-size: 2.5em;
+     }
  }

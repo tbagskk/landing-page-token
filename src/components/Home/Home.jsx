@@ -49,8 +49,6 @@ export default function Home()
             let tmp = Math.floor(value * 1144);
             setPriceDevise(tmp);
         }
-       
-        
     };
 
     const handlePriceBeforeChange = (e) => {
@@ -64,8 +62,6 @@ export default function Home()
         setPriceBeforeChange("");
         setDeviseSelect(0);
     };
-
-
 
     return (
         <div className='homeContainer'>
@@ -119,6 +115,33 @@ export default function Home()
                     </div>
                 </div>
                 <img alt="bottom" className="imgBottom" src={Bottom}></img>
+                <div className='containerStat'>
+                    <div className='leftStat'>
+                        <div className='childStat'>
+                            <p className='textStat'> $MK total staké </p>
+                            <p className='numberStat'> 36,161,508 </p>
+                        </div>
+                        <div className='childStat'>
+                            <p className='textStat'> % du $MK Staké </p>
+                            <p className='numberStat'> 80% </p>
+                        </div>
+                    </div>
+                    <div className='childStat' id="api">
+                        <p id="apiText" className='textStat'> APY </p>
+                        <p id="apiNumber" className='numberStat'> 109% </p>
+                    </div>
+                    <div className='rightStat'>
+                        <div className='childStat'>
+                            <p className='textStat'> Récompenses totales versées ($MK) </p>
+                            <p className='numberStat'> 8,064,526 </p>
+                        </div>
+                        <div className='childStat'>
+                            <p className='textStat'> Stakers totaux </p>
+                            <p className='numberStat'> 11804 </p>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         </div>
     )
